@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/selector_home_bg"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/bbs"
+        android:icon="@drawable/selector_bbs_bg"
+        android:title="发布"/>
+
+    <item
+        android:id="@+id/mine"
+        android:icon="@drawable/selector_mine_bg"
+        android:title="个人" />
+
+</menu>

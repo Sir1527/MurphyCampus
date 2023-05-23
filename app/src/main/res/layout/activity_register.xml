@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="68dp"
+        android:text="欢迎加入"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_login_title_3"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="我们"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_login"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="开始注册吧~"
+        android:textColor="#ff3d3d3d"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_login_title_3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_title_3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="邮箱"
+        android:textColor="#FF434343"
+        app:layout_constraintLeft_toLeftOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:hint="输入你的邮箱"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="用户名"
+        android:textColor="#FF434343"
+        app:layout_constraintStart_toStartOf="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <EditText
+        android:id="@+id/et_userName"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:hint="输入你的用户名"
+        android:inputType="text"
+
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="电话"
+        android:textColor="#FF434343"
+        app:layout_constraintStart_toStartOf="@+id/et_userName"
+        app:layout_constraintTop_toBottomOf="@+id/et_userName" />
+
+    <EditText
+        android:id="@+id/et_userPhone"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:hint="输入你的号码"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="密码"
+        android:textColor="#FF434343"
+        app:layout_constraintStart_toStartOf="@+id/et_userPhone"
+        app:layout_constraintTop_toBottomOf="@+id/et_userPhone" />
+
+    <EditText
+        android:id="@+id/et_password1"
+        android:layout_width="299dp"
+        android:layout_height="53dp"
+        android:hint="输入你的密码"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="确认密码"
+        android:textColor="#FF434343"
+        app:layout_constraintTop_toBottomOf="@+id/et_password1"
+        app:layout_constraintLeft_toLeftOf="@+id/et_password1"/>
+
+    <EditText
+        android:id="@+id/et_password2"
+        android:layout_width="299dp"
+        android:layout_height="53dp"
+        android:hint="输入你的密码"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="191dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="注册"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
